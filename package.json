@@ -1,0 +1,30 @@
+{
+  "name": "molt-observer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "molt:register": "tsx scripts/molt_register.ts",
+    "molt:verify": "tsx scripts/molt_register.ts --verify",
+    "molt:health": "tsx scripts/molt_health.ts",
+    "molt:post": "tsx scripts/molt_post.ts",
+    "molt:dm": "tsx scripts/molt_dm.ts",
+    "molt:auto": "tsx scripts/molt_auto_post.ts",
+    "molt:queue": "tsx scripts/molt_queue.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "undici": "^7.20.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
