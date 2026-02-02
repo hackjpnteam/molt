@@ -118,7 +118,9 @@ async function main(): Promise<void> {
     console.log(`✗ Failed: ${result.error}`);
     // Don't increment index on failure
     if (result.error?.includes('30 minutes')) {
-      console.log('Rate limited - will retry next run');
+      console.log('Rate limited - will retry next scheduled run (normal behavior)');
+      // Exit 0 so workflow doesn't fail
+      process.exit(0);
     }
     process.exit(1);
   }
